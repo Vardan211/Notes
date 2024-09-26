@@ -31,7 +31,7 @@ export default async function userHandler(
       }
       break;
     case "PUT":
-      res.status(200).json({});
+      res.status(200);
       break;
     default:
       res.setHeader("Allow", ["GET", "PUT"]);

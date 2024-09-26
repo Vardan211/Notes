@@ -19,7 +19,7 @@ export async function POST(req: Request) {
 }
 
 // Get all the users using GET method
-export async function GET(req: Request) {
+export async function GET() {
   const result = await prisma.folder.findMany();
   return Response.json({ message: "ok", status: 200, data: result });
 }

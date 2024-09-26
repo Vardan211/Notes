@@ -1,3 +1,18 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "eslintConfig": {
+    // Add this <-----
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": ["plugin:vue/essential", "eslint:recommended"],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      // rules configuration here <-----
+      "no-unused-vars": "off"
+    }
+  }
 }
